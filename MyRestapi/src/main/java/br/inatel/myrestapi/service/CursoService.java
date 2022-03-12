@@ -32,4 +32,29 @@ public class CursoService {
                     .map(m -> m.getValue())
                     .collect(Collectors.toList());
     }
+
+    public Curso buscarCursoPeloId(Long cursoId){
+        Curso curso = mapa.get(cursoId);
+        return curso;
+    }
+
+    public Curso criarCurso(Curso curso){
+        long cursoId = gerarCursoIdUnico();
+        curso.setId(cursoId);
+
+        mapa.put(cursoId, curso);
+        return curso;
+    }
+
+    private long gerarCursoIdUnico() {
+        return mapa.size();
+    }
+
+    public void atualizarCurso(Curso curso){
+        mapa.put(curso.getId(), curso);
+    }
+
+    public void removerCurso(Long cursoId) {
+        mapa.remove(cursoId);
+    }
 }
