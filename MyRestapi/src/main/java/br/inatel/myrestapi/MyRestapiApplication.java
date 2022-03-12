@@ -1,4 +1,4 @@
-package br.inatel.myrestapi.MyRestapi;
+package br.inatel.myrestapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
