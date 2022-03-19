@@ -34,6 +34,7 @@ public class CursoController {
 
     @PostMapping
     public Curso criar(Curso curso){
+        System.out.println(curso);
         curso = servico.criarCurso(curso);
         return curso;
     }
@@ -41,6 +42,12 @@ public class CursoController {
     public void remover(@PathVariable("id") Long cursoId){
         servico.removerCurso(cursoId);
 
+    }
+
+    @PutMapping
+    public void atualizar(Curso curso) {
+        System.out.println(curso);
+        servico.atualizarCurso(curso);
     }
 
 
