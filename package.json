@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "mqtt": "^4.3.7"
+  },
+  "name": "mqtt",
+  "description": "Repositório destinado a atividades da disciplina de Sistemas Distribuidos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cividati/C216.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cividati/C216/issues"
+  },
+  "homepage": "https://github.com/Cividati/C216#readme"
+}
